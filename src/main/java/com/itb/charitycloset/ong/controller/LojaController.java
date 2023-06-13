@@ -11,6 +11,8 @@ public class LojaController {
 	@GetMapping("/listar")
 	
 	public String listarProduto() {
+		Produto p1 = new Produto();
+		p1.id = 20l;
 		
 		return "produtos";
 	}
