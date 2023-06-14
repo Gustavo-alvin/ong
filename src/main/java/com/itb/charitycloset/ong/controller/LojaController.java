@@ -14,7 +14,7 @@ public class LojaController {
 	
 	public String listarProduto() {
 		Produto p1 = new Produto();
-		p1.id = 20l;
+		p1.setId (20l);
 		
 		return "produtos";
 	}
