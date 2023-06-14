@@ -32,6 +32,19 @@ public class LojaController {
 		p1.setDescricao("Produto Linha Branca com painel digital");
 		p1.setPreco(3855.79);
 		
+		Produto p3 = new Produto();
+		p1.setId (50l);
+		p1.setNome("televisor 70");
+		p1.setCodigoBarras("1584445514HYGU8");
+		p1.setDescricao("Televisor tela plana let Samsung");
+		p1.setPreco(7845.79);
+		
+		
+		// Adicionando os produtos a lista
+		
+		listaDeProdutos.add(p1);
+		listaDeProdutos.add(p2);
+		
 		
 		return "produtos";
 		
