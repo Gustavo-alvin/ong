@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -17,7 +18,7 @@ public class LojaController {
 	
 	@GetMapping("/listar")
 	
-	public String listarProduto() {
+	public String listarProduto(Model model) {
 		Produto p1 = new Produto();
 		p1.setId (20l);
 		p1.setNome("Maquina de Lavar Brastemp 15 l");
@@ -44,6 +45,8 @@ public class LojaController {
 		
 		listaDeProdutos.add(p1);
 		listaDeProdutos.add(p2);
+		
+		model.addAllAttributes("listaDeProdutos", listaDeProdutos);
 		
 		
 		return "produtos";
