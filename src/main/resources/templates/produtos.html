@@ -23,7 +23,7 @@
             </h2>
             <table class="table table-striped table-reponsive-md">
                 <thead>
-                    <tr>
+                    <tr>                                                                    
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Código de barras</th>
@@ -32,9 +32,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="listaDeProdutos : ${produto}">
-                        <td th:text="${produto.id}">
-                        </td>
+                    <tr th:each="Produtos : ${listaDeProdutos}">
+                        <td th:text="${produto.id}"> </td>
+                        <td th:text="${produto.nome}"></td>
+                        <td th:text="${produto.descricao}"></td>
+                        <td th:text="${produto.codigoBarras}"></td>
+                        <td th:text="${produto.preco}"></td>
+                        <td><a href="#">Editar</a></td>
                     </tr>
                 </tbody>
             </table>

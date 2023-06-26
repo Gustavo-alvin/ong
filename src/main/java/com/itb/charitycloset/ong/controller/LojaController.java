@@ -45,8 +45,9 @@ public class LojaController {
 		
 		listaDeProdutos.add(p1);
 		listaDeProdutos.add(p2);
+		listaDeProdutos.add(p3);
 		
-		model.addAllAttributes("listaDeProdutos", listaDeProdutos);
+		model.addAttribute("listaDeProdutos",listaDeProdutos);
 		
 		
 		return "produtos";
