@@ -25,6 +25,7 @@ public class LojaController {
 		p1.setCodigoBarras("15844489FJFDFYGU8");
 		p1.setDescricao("Produto Linha Branca com painel digital");
 		p1.setPreco(3215.89);
+		p1.setCodStatus(false);
 		
 		Produto p2 = new Produto();
 		p2.setId (50l);
@@ -32,6 +33,7 @@ public class LojaController {
 		p2.setCodigoBarras("1584448GHYGU8");
 		p2.setDescricao("Produto Linha Branca com painel digital");
 		p2.setPreco(3855.79);
+		p2.setCodStatus(true);
 		
 		Produto p3 = new Produto();
 		p3.setId (50l);
@@ -39,7 +41,7 @@ public class LojaController {
 		p3.setCodigoBarras("1584445514HYGU8");
 		p3.setDescricao("Televisor tela plana let Samsung");
 		p3.setPreco(7845.79);
-		
+		p3.setCodStatus(false);
 		
 		// Adicionando os produtos a lista
 		
